@@ -1,10 +1,9 @@
-
 <div>
   <label>User: </label> <input type="text" #user /> <br><br>
   <label>Send message: </label> <input type="text" #message /> 
   <button (click)="invia(user, message)">Invia</button>
-</div>
-<hr>
+</div><hr>
+
 <div>
   <app-post *ngFor="let p of lista_post" [post]="p"></app-post>
 </div>

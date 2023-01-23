@@ -4,12 +4,12 @@
         {{post.message}} <br>
         {{post.n_like}} 
         <button (click)="addLike()">Like</button> <br>
-    <a> 
+    </a> 
 </div>
 
 <div>
     <input type="text" #c />
-    <button (click)="commenta(c)">Commenta</button>
-    <app-comment *ngFor="let c of post.commenti" [commento]="c"></app-comment>
+    <button (click)="commenta(c)">Commenta</button> <br>
+    <app-comment *ngFor="let c of post.commenti" [commento]="c"></app-comment> <br>
 </div>
 
